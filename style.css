@@ -1,0 +1,66 @@
+/* 기본 설정 */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; /* 유니티 같은 다크모드 */
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #2c3e50, #000000);
+}
+
+/* 격자 레이아웃 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 카드 디자인 */
+.subject-card {
+    background: #252525;
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.subject-card:hover {
+    transform: translateY(-10px);
+    border-color: #3498db;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.card-icon {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+/* 유튜브 영상 컨테이너 (16:9 유지) */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
